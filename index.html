@@ -1,0 +1,50 @@
+<!<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rizky's ZERAKION Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="introText" class="center">
+    <h1>Welcome to the Official Rizky's ZERAKION Website!</h1>
+    <p style="font-size: 1.2rem;">Get ready for an epic journey. <br>Press 'Start' to explore.</p>
+  </div>
+
+  <div id="startScreen" class="center" style="display: none;">
+    <button id="startBtn" class="animatedBtn">Start</button>
+  </div>
+
+  <div id="loadingScreen" style="display: none;">
+    <div id="loadingText">Loading... 0%</div>
+    <div id="loadingBar"></div>
+  </div>
+
+  <div id="mainContent" class="content" style="display: none;">
+    <div class="bio-card">
+      <h2 id="bioName">RIZKY</h2>
+      <p id="bioDetails" style="display: none;"><strong>Name:</strong> Muhammad Rizky F.</p>
+      <p id="bioNick" style="display: none;"><strong>Nickname:</strong> Ikyy</p>
+      <p id="bioLocation" style="display: none;"><strong>Location:</strong> Tembilahan</p>
+      <p id="bioHobbies" style="display: none;"><strong>Hobbies:</strong> Creating WhatsApp Bots & Coding</p>
+
+      <p>Currently working on <strong>ZERAKION Multi-Device</strong> Bot 💥.<br>
+      Click the button below to contact me on WhatsApp:</p>
+
+      <div class="wa-buttons">
+        <a href="https://wa.me/62895321345547?text=iky%20ZERAKION%20md%20berapa%20ya%3F" target="_blank">WhatsApp 1</a>
+        <a href="https://wa.me/6285764413880?text=iky%20ZERAKION%20md%20berapa%20ya%3F" target="_blank">WhatsApp 2</a>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bgMusic" autoplay loop>
+    <source src="https://files.catbox.moe/v9akfm.aac" type="audio/aac">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #222;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.center {
+  text-align: center;
+}
+
+#introText h1 {
+  font-size: 3rem;
+  color: #ff6f00;
+  animation: fadeIn 3s ease-in-out;
+}
+
+#introText p {
+  font-size: 1.2rem;
+  color: #ccc;
+  animation: fadeIn 4s ease-in-out;
+}
+
+.animatedBtn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background: linear-gradient(45deg, #ff6f00, #ffab00);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.animatedBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#loadingScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('https://media.giphy.com/media/3o7TKNgbUjmChMZFSI/giphy.gif') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+#loadingText {
+  font-size: 2rem;
+  color: white;
+  margin-top: 20px;
+}
+
+#loadingBar {
+  width: 80%;
+  height: 10px;
+  background: #ff6f00;
+  margin-top: 20px;
+  border-radius: 5px;
+  animation: loadingBar 3s linear infinite;
+}
+
+@keyframes loadingBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+#mainContent {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  max-width: 700px;
+  margin: auto;
+  display: none;
+}
+
+.wa-buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.wa-buttons a:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInDelayed {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
